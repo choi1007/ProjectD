@@ -57,8 +57,11 @@
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\ICSharpCode.SharpZipLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OpenXmlFormats.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\Poly2Tri\Pathfinding.Poly2Tri.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OOXML.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\Clipper\Pathfinding.ClipperLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OpenXml4Net.dll" />
@@ -478,6 +481,15 @@
     <Reference Include="DOTweenPro">
       <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.ClipperLib">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\Clipper\Pathfinding.ClipperLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Poly2Tri">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\Poly2Tri\Pathfinding.Poly2Tri.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
     </Reference>
@@ -873,6 +885,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.Player.csproj">
+      <Project>{B210B4F0-56D8-5945-A11F-ABC55D9146B8}</Project>
+      <Name>AstarPathfindingProject.Player</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

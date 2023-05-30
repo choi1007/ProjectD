@@ -57,8 +57,11 @@
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\ICSharpCode.SharpZipLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OpenXmlFormats.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\Poly2Tri\Pathfinding.Poly2Tri.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OOXML.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\Clipper\Pathfinding.ClipperLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OpenXml4Net.dll" />
@@ -526,6 +529,15 @@
     <Reference Include="DOTweenPro">
       <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.ClipperLib">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\Clipper\Pathfinding.ClipperLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Poly2Tri">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\Poly2Tri\Pathfinding.Poly2Tri.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -984,6 +996,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{9209EF92-ED97-53BB-21EF-ECE2DD85A55A}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{02CC5E5C-BE55-B3FC-85C9-D90E181D91F4}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{84832C3B-6ED0-DD0C-55AA-CB0BB4645254}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
