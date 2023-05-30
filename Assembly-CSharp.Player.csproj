@@ -80,6 +80,8 @@
     <Compile Include="Assets\ProjectD\Script\Manager\SoundManager.cs" />
     <Compile Include="Assets\ProjectD\Script\Manager\TableManager.cs" />
     <Compile Include="Assets\ProjectD\Art\BlackMetal UI\Demo_Assets\scripts\GUI_Demo.cs" />
+    <Compile Include="Assets\ProjectD\Script\AI\AISensor.cs" />
+    <Compile Include="Assets\Test\Script\Test_PlayerUITarget.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ProjectD\AssetStore\PolygonApocalypse\Shader\POLYGON_Zombies.shader" />

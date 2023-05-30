@@ -55,17 +55,17 @@
   <ItemGroup>
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\ICSharpCode.SharpZipLib.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\ProjectD\AssetStore\AstarPathfindingProject\Plugins\Poly2Tri\Pathfinding.Poly2Tri.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OpenXmlFormats.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.dll" />
-    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll" />
-    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\Poly2Tri\Pathfinding.Poly2Tri.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\ProjectD\AssetStore\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OOXML.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll" />
-    <Analyzer Include="D:\Project\ProjectD\Assets\AstarPathfindingProject\Plugins\Clipper\Pathfinding.ClipperLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\ExcelImporter\Editor\NPOI\Net20\NPOI.OpenXml4Net.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll" />
+    <Analyzer Include="D:\Project\ProjectD\Assets\ProjectD\AssetStore\AstarPathfindingProject\Plugins\Clipper\Pathfinding.ClipperLib.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll" />
     <Analyzer Include="D:\Project\ProjectD\Assets\Plugins\Demigiant\DOTween\DOTween.dll" />
   </ItemGroup>
@@ -530,13 +530,13 @@
       <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>Assets\ProjectD\AssetStore\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.ClipperLib">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\Clipper\Pathfinding.ClipperLib.dll</HintPath>
+      <HintPath>Assets\ProjectD\AssetStore\AstarPathfindingProject\Plugins\Clipper\Pathfinding.ClipperLib.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Poly2Tri">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\Poly2Tri\Pathfinding.Poly2Tri.dll</HintPath>
+      <HintPath>Assets\ProjectD\AssetStore\AstarPathfindingProject\Plugins\Poly2Tri\Pathfinding.Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
