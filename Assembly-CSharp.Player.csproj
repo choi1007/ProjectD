@@ -59,6 +59,7 @@
     <Compile Include="Assets\ProjectD\Script\InGame\Wall\NormalWall.cs" />
     <Compile Include="Assets\ProjectD\Art\BlackMetal UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\ProjectD\Script\InGame\Public\Status.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\FSM\Actor.cs" />
     <Compile Include="Assets\ProjectD\Script\Util\EffectDestroy.cs" />
     <Compile Include="Assets\ProjectD\Script\InGame\AI\AISensor.cs" />
     <Compile Include="Assets\ProjectD\Script\Util\EventAggregator.cs" />
@@ -75,8 +76,17 @@
     <Compile Include="Assets\ProjectD\Script\InGame\Public\Health.cs" />
     <Compile Include="Assets\ProjectD\Script\Util\DontDestroyObject.cs" />
     <Compile Include="Assets\ProjectD\Script\Manager\InGameManager.cs" />
-    <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerMove.cs" />
-    <Compile Include="Assets\ProjectD\Script\InGame\Actor\Actor.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\FSM\FSM.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\FSM\FSMState.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerMoveState.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerIdleState.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerAttackState.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerReloadState.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerDeadState.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerDropItemState.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerSkillState.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\Player\Player.cs" />
+    <Compile Include="Assets\ProjectD\Script\InGame\DataManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ProjectD\AssetStore\PolygonApocalypse\Shader\POLYGON_Zombies.shader" />

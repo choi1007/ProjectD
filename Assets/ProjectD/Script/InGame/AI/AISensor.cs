@@ -170,7 +170,7 @@ public class AISensor : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if(mesh)
+        if (mesh)
         {
             Gizmos.color = meshColor;
             Gizmos.DrawMesh(mesh, transform.position, transform.rotation);
@@ -183,7 +183,7 @@ public class AISensor : MonoBehaviour
         }
 
         Gizmos.color = Color.green;
-        foreach(var obj in Objects)
+        foreach (var obj in Objects)
         {
             Debug.Log($"{obj.name}");
             Gizmos.DrawSphere(obj.transform.position, 0.2f);
