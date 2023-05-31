@@ -5,12 +5,10 @@ using InGame;
 
 public class Player : Actor
 {
-
     public void InitPlayerData()
     {
 
     }
-
 
     public override void Shoot()
     {
@@ -19,6 +17,6 @@ public class Player : Actor
 
     public override void Hit(int _damage)
     {
-    
+
     }
 }
