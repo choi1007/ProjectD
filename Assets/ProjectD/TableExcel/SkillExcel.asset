@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81a75ce5471b00a41898e09d69311a35, type: 3}
+  m_Name: SkillExcel
+  m_EditorClassIdentifier: 
+  SkillSheet:
+  - Id: 3001
+    Value1: 10
+    Value2: 0
+    Value3: 0
+  - Id: 3002
+    Value1: 15
+    Value2: 15
+    Value3: 0
+  - Id: 3003
+    Value1: 20
+    Value2: 20
+    Value3: 0
+  - Id: 3004
+    Value1: 5
+    Value2: 5
+    Value3: 15
+  - Id: 3005
+    Value1: 5
+    Value2: 10
+    Value3: 20

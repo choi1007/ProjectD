@@ -10,6 +10,11 @@ public class Player : Actor
 
     }
 
+    public override void ScanEnemy()
+    {
+        //Sensor.scanFrequency
+    }
+
     public override void Shoot()
     {
 

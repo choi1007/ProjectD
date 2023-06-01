@@ -4,5 +4,9 @@ using UnityEngine;
 
 public class TableManager : Singleton<TableManager>
 {
+    public CharExcel CharTable;
+    public ItemExcel ItemTable;
+    public SkillExcel SkillTable;
+
     public void OnWake() { }
 }

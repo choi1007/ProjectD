@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1db84606cdcc1141881e1217200e56c, type: 3}
+  m_Name: CharExcel
+  m_EditorClassIdentifier: 
+  CharUpgradeSheet:
+  - Level: 1
+    Hp: 0
+    Skill: 0
+  - Level: 2
+    Hp: 10
+    Skill: 0
+  - Level: 3
+    Hp: 25
+    Skill: 0
+  - Level: 4
+    Hp: 50
+    Skill: 1
+  - Level: 5
+    Hp: 80
+    Skill: 1
+  - Level: 6
+    Hp: 120
+    Skill: 1
+  - Level: 7
+    Hp: 200
+    Skill: 2
+  UpgradeMaterialSheet:
+  - Level: 1
+    Iron: 1
+    Cloth: 1
+    Junk: 1
+  - Level: 2
+    Iron: 2
+    Cloth: 2
+    Junk: 2
+  - Level: 3
+    Iron: 3
+    Cloth: 3
+    Junk: 3
+  - Level: 4
+    Iron: 4
+    Cloth: 4
+    Junk: 4
+  - Level: 5
+    Iron: 5
+    Cloth: 5
+    Junk: 5
+  - Level: 6
+    Iron: 6
+    Cloth: 6
+    Junk: 6
+  - Level: 7
+    Iron: 7
+    Cloth: 7
+    Junk: 7
