@@ -5,6 +5,8 @@ using InGame;
 
 public class Player : Actor
 {
+    [SerializeField] AISensor Scan;
+
     public void InitPlayerData()
     {
 
@@ -12,7 +14,7 @@ public class Player : Actor
 
     public override void ScanEnemy()
     {
-        //Sensor.scanFrequency
+
     }
 
     public override void Shoot()
