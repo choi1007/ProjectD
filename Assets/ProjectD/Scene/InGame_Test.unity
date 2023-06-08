@@ -488,6 +488,7 @@ MonoBehaviour:
   AttackDist: 5
   IsRange: 1
   Sensor: {fileID: 1261980636}
+  Scan: {fileID: 1261980636}
 --- !u!1001 &1607878921
 PrefabInstance:
   m_ObjectHideFlags: 0

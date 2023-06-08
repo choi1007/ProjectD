@@ -5,19 +5,19 @@ using InGame;
 
 public class Player : Actor
 {
-    [SerializeField] AISensor Scan;
-
+    [SerializeField] private AISensor Scan;
+    
     public void InitPlayerData()
     {
-
+        Fsm.ChangeState(ActorState.Idle);
     }
 
-    public override void ScanEnemy()
+    private void Update()
     {
-
+        Scan.Scan();
     }
 
-    public override void Shoot()
+    public override void Attack()
     {
 
     }

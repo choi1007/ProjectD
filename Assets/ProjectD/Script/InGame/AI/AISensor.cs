@@ -34,15 +34,15 @@ public class AISensor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scanTimer -= Time.deltaTime;
-        if(scanTimer < 0)
-        {
-            scanTimer += scanInterval;
-            Scan();
-        }
+        //scanTimer -= Time.deltaTime;
+        //if(scanTimer < 0)
+        //{
+        //    scanTimer += scanInterval;
+        //    Scan();
+        //}
     }
 
-    private void Scan()
+    public void Scan()
     {
         count = Physics.OverlapSphereNonAlloc(transform.position, distance, colliders, layers, QueryTriggerInteraction.Collide);
 

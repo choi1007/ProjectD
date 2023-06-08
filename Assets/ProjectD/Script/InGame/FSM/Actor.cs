@@ -17,10 +17,7 @@ namespace InGame
 
         public bool IsRange = false;
 
-        [SerializeField] protected AISensor Sensor;
-
-        public abstract void ScanEnemy();
-        public abstract void Shoot();
+        public abstract void Attack();
         public abstract void Hit(int _damage);
         public bool BulletReady() { return (BulletWaitTime < Time.time); }
     }

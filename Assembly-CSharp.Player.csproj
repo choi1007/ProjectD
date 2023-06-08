@@ -94,14 +94,37 @@
     <Compile Include="Assets\ProjectD\Script\InGame\Player\PlayerDropItemState.cs" />
     <Compile Include="Assets\ProjectD\Script\Util\DontDestroyObject.cs" />
     <Compile Include="Assets\ProjectD\Script\Manager\InGameManager.cs" />
+    <Compile Include="Assets\ProjectD\Script\Text\TextBinding.cs" />
+    <Compile Include="Assets\ProjectD\Script\Manager\TextManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\ProjectD\AssetStore\PolygonApocalypse\Shader\POLYGON_Zombies.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\ProjectD\AssetStore\Military_Pistol_01\Docs\READ_ME_RH_WP_Unmask_Transform_01.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\ProjectD\AssetStore\Military_Pistol_01\Docs\Military_Pistol_Unity_Info.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\ProjectD\AssetStore\Rifle_01_v25\Docs\READ_ME_RH_WP_Unmask_Transform_01.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\ProjectD\AssetStore\PolygonApocalypse\Shader\POLYGON_Triplanar.shader" />
     <None Include="Assets\ProjectD\AssetStore\Rifle_01_v25\Docs\Military_Rifle_Unity_Info.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
