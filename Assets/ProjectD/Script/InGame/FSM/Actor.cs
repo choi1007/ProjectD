@@ -1,27 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using Sirenix.OdinInspector;
-//using Elendow.SpritedowAnimator;
+using Pathfinding;
+using GameData;
 
 namespace InGame
 {
     public abstract class Actor : MonoBehaviour
     {
+        [HideInInspector]
+        public IAstarAI Astar;
+
+        [HideInInspector]
+        public Vector3 OriginPos;
+        
+        public float AttackDistance;
+
         public FSM Fsm;
 
-        //[BoxGroup("Stat/Range"), ShowIf(nameof(isRange)), ReadOnly]
-        public float BulletWaitTime;
+        public CharData CharData;
 
-        public float AttackDist = 1f;
-
-        public bool IsRange = false;
-
-        [SerializeField] protected AISensor Sensor;
-
-        public abstract void ScanEnemy();
-        public abstract void Shoot();
-        public abstract void Hit(int _damage);
-        public bool BulletReady() { return (BulletWaitTime < Time.time); }
+        public abstract void Hit(Damage _damage);
     }
 }

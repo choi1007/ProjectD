@@ -10,26 +10,25 @@ namespace InGame
 {
     public enum ActorState
     {
-        Idle= 0,
+        Idle = 0,
         Move,
         Dead,
         Attack,
-        Reload,
         Skill,
         DropItem,
+        Reload,
     }
 
     public sealed partial class FSM : MonoBehaviour
     {
         public Actor actor;
 
-        //[ShowInInspector, DisableInEditorMode]
+        public LayerMask EnemyLayers;
+
         public Actor target { get; set; }
 
-        //[ShowInInspector, ReadOnly]
         public ActorState state { get; private set; }
 
-        //[ShowInInspector, ReadOnly]
         private Dictionary<ActorState, FSMState> dicStates = new Dictionary<ActorState, FSMState>();
 
         [SerializeField] private Animator animator;
@@ -38,15 +37,18 @@ namespace InGame
         {
             if (actor == null)
                 actor = GetComponent<Actor>();
-            SetData();
         }
 
-        private void SetData()
+        private void Update()
         {
-            FSMState.Regist(new PlayerIdleState(), this);
-            FSMState.Regist(new PlayerAttackState(), this);
-            FSMState.Regist(new PlayerMoveState(), this);
+            GetCurState()?.OnUpdate();
         }
+
+        private void LateUpdate()
+        {
+            GetCurState()?.OnLateUpdate();
+        }
+
 
         private FSMState GetCurState()
         {
@@ -60,29 +62,20 @@ namespace InGame
             this.state = nextState;
             var newState = this.dicStates[nextState];
             newState?.OnStart();
-            PlayAnimation();
         }
 
-        public void PlayAnimation()
+        public void PlayAnimation(string _animKey, bool _animActive = false)
         {
             if (animator == null) return;
+            if (String.IsNullOrEmpty(_animKey) == false)
+                animator.SetBool(_animKey, _animActive);
+        }
 
-            string _animationName = "Idle";
-
-            switch(state)
-            {
-                case ActorState.Idle:
-                    _animationName = "Idle";
-                    break;
-                case ActorState.Move:
-                    _animationName = "Move";
-                    break;
-                case ActorState.Attack:
-                    _animationName = "Attack";
-                    break;
-            }
-
-            animator.Play(_animationName);
+        public void PlayAnimation(string _animKey, float _animActive = 0)
+        {
+            if (animator == null) return;
+            if (String.IsNullOrEmpty(_animKey) == false)
+                animator.SetFloat(_animKey, _animActive);
         }
     }
 }

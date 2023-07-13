@@ -17,6 +17,8 @@ public class PlayerDeadState : FSM.FSMState
 
     }
 
+    public override void OnLateUpdate() { }
+
     public override void OnEnd()
     {
 

@@ -4,30 +4,18 @@ using System.Collections.Generic;
 namespace GameData
 {
     [Serializable]
-    public class PlayerData : CharData
+    public class PlayerData
     {
+        public WeaponData WeaponData;
+        public CharData CharData;
         public List<SkillData> SkillData;
-    }
-
-    [Serializable]
-    public class NpcData : CharData
-    {
-        public uint NpcID;
-        public SkillData SkillData;
-    }
-
-    public class MonsterData :CharData
-    {
-        public uint MonsterID;
-        public SkillData SkillData;
     }
 
     public class CharData
     {
-        public int Hp;
-        public int Ap;
-        public float AttackRate;
-        public float ReloadTime;
+        public uint CharId;
+        public int MaxHp;
+        public float Speed;
     }
 
     public class SkillData
@@ -36,26 +24,33 @@ namespace GameData
         public int SkillLevel;
     }
 
-    [Serializable]
-    public class InventoryData
+    public class Inventory
     {
-        public List<ItemData> Item;
-        public int InventoryLevel;
+        public int Magazine;
+    }
+
+    public class WeaponData
+    {
+        public uint WeaponId; // 무기아이디.
+        public int Damage; // 대미지.
+        public float AttackRate; // 쏘는간격. 
+        public float Critical; // 크리티컬.
+        public float ReloadTime; // 재장전시간.
+        public int AccuracyRate; // 명중률.
+        public int MagazineBullet; //탄창의 총알수.
+        public List<WeaponUpgrade> WeaponUpgradeList = new List<WeaponUpgrade>(5);
+    }
+
+    public class WeaponUpgrade
+    {
+        public uint WeaponUpgradeId;
+        public int WeaponUpgradeLevel;
     }
 
     public class ItemData
     {
-        public uint ItemID;
-        public int ItemAmount;
-        public float ItemWeight;
-    }
-
-    [Serializable]
-    public class BaseData
-    {
-        public int BaseLevel;
-        public int WallLevel;
-        public int EnergyLevel;
-        public int TentLevel;
+        public uint ItemId;
+        public int Amount;
+        public float Weight;
     }
 }
