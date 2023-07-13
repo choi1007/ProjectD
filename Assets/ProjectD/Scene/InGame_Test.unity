@@ -1146,6 +1146,7 @@ MonoBehaviour:
   OriginPos: {x: 0, y: 0, z: 0}
   AttackDistance: 0
   Fsm: {fileID: 1261980637}
+<<<<<<< HEAD
   ClickLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -1317,6 +1318,13 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+=======
+  BulletWaitTime: 0.12
+  AttackDist: 5
+  IsRange: 1
+  Sensor: {fileID: 1261980636}
+  Scan: {fileID: 1261980636}
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
 --- !u!1001 &1607878921
 PrefabInstance:
   m_ObjectHideFlags: 0

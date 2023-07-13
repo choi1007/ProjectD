@@ -1,6 +1,10 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.26f1 (a16dc32e0ff2) revision 10579395'; Using compiler version '192829333'; Build Type 'Release'
+<<<<<<< HEAD
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 32685 MB
+=======
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16313 MB
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,9 +19,15 @@ C:/Project/Personal/ProjectD
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 1952
 Successfully changed project path to: C:/Project/Personal/ProjectD
 C:/Project/Personal/ProjectD
+=======
+53528
+Successfully changed project path to: D:/Project/ProjectD
+D:/Project/ProjectD
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,6 +57,7 @@ C:/Project/Personal/ProjectD
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [15256] Host "[IP] 192.168.29.194 [Port] 0 [Flags] 2 [Guid] 2991458269 [EditorId] 2991458269 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NVUD8UN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [15256] Host "[IP] 192.168.29.194 [Port] 0 [Flags] 2 [Guid] 2991458269 [EditorId] 2991458269 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NVUD8UN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -56,6 +67,17 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Project/Personal/ProjectD/Assets
+=======
+Player connection [33356] Host "[IP] 172.16.11.80 [Port] 0 [Flags] 2 [Guid] 4007627297 [EditorId] 4007627297 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-D7AFDDI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [33356] Host "[IP] 172.16.11.80 [Port] 0 [Flags] 2 [Guid] 4007627297 [EditorId] 4007627297 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-D7AFDDI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 170.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Project/ProjectD/Assets
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -67,6 +89,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -83,11 +106,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (904ms)
 		BeginReloadAssembly (74ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010395 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 163.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.948 seconds
+Domain Reload Profiling:
+	ReloadAssembly (948ms)
+		BeginReloadAssembly (128ms)
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (746ms)
 			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -102,12 +141,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (74ms)
 				ProcessInitializeOnLoadMethodAttributes (41ms)
+=======
+		EndReloadAssembly (673ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (154ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (410ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (164ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.009186 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Project\Personal\ProjectD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -154,6 +210,53 @@ Unloading 3543 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 36 unused Assets / (285.3 KB). Loaded Objects now: 4013.
 Memory consumption went from 141.3 MB to 141.0 MB.
 Total: 4.891700 ms (FindLiveObjects: 0.337700 ms CreateObjectMapping: 0.287700 ms MarkObjects: 4.154300 ms  DeleteObjects: 0.110400 ms)
+=======
+Registered in 0.011187 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Project\ProjectD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Project\ProjectD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.613 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1614ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1264ms)
+			LoadAssemblies (153ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (418ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (589ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (426ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 3.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3518 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (57.5 KB). Loaded Objects now: 3982.
+Memory consumption went from 130.9 MB to 130.9 MB.
+Total: 6.866000 ms (FindLiveObjects: 0.693700 ms CreateObjectMapping: 0.157300 ms MarkObjects: 5.891000 ms  DeleteObjects: 0.121600 ms)
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,6 +270,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 1104.789175 seconds.
   path: Assets/ProjectD/Script/InGame/Player/Player.cs
   artifactKey: Guid(d89f0d747934ee74c822372ecb0d57fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -5803,3 +5907,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+  Time since last request: 1907601.329920 seconds.
+  path: Assets/ProjectD/AssetStore/AstarPathfindingProject/Behaviors
+  artifactKey: Guid(5eeb3c5df5ca840d3ae6b93e6b207d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectD/AssetStore/AstarPathfindingProject/Behaviors using Guid(5eeb3c5df5ca840d3ae6b93e6b207d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1a0fba7f472455d308b69c0b1124414') in 0.018183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/ProjectD/AssetStore/AstarPathfindingProject/Editor
+  artifactKey: Guid(5c2323dc4abce42aabf8c3246653260c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectD/AssetStore/AstarPathfindingProject/Editor using Guid(5c2323dc4abce42aabf8c3246653260c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe99f4020854e28bc02ed984df3ae27b') in 0.011509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/ProjectD/AssetStore/AstarPathfindingProject/ExampleScenes
+  artifactKey: Guid(1cd8ea875c1ca41eca876c0d0bac4d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectD/AssetStore/AstarPathfindingProject/ExampleScenes using Guid(1cd8ea875c1ca41eca876c0d0bac4d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f16be4d2157ac7dbf2b9d32f3718eea') in 0.010066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ProjectD/Resources
+  artifactKey: Guid(87a8e850777eb7541a3a236fd45be253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectD/Resources using Guid(87a8e850777eb7541a3a236fd45be253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf5d000e0190c7e179553124b153a6b') in 0.009690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000928 seconds.
+  path: Assets/ProjectD/AssetStore/PolygonApocalypse/License
+  artifactKey: Guid(82a0fe07403456a4d9bf3de7b31a3952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectD/AssetStore/PolygonApocalypse/License using Guid(82a0fe07403456a4d9bf3de7b31a3952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62a6a5be41308ffe6d0206a689aedd4') in 0.008938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.165369 seconds.
+  path: Assets/ProjectD/AssetStore/PolygonApocalypse/Materials
+  artifactKey: Guid(9f3f4e9e47f381541bbb3f0350a3e62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectD/AssetStore/PolygonApocalypse/Materials using Guid(9f3f4e9e47f381541bbb3f0350a3e62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af578b99f41bc4903d50e125555284a') in 0.009677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.214632 seconds.
+  path: Assets/ProjectD/AssetStore/PolygonApocalypse/Models
+  artifactKey: Guid(953f6a21760912845844c3f88ab1a5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectD/AssetStore/PolygonApocalypse/Models using Guid(953f6a21760912845844c3f88ab1a5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f05d119068640a67de6002a969ee6e9') in 0.008371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.153983 seconds.
+  path: Assets/ProjectD/AssetStore/PolygonApocalypse/Prefabs
+  artifactKey: Guid(5d94a61f131a47d4dafd326b111dca2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectD/AssetStore/PolygonApocalypse/Prefabs using Guid(5d94a61f131a47d4dafd326b111dca2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec41a7ecb08a9337122e86e7678766af') in 0.010104 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc

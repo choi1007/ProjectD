@@ -20,6 +20,16 @@ namespace InGame
 
         public CharData CharData;
 
+<<<<<<< HEAD
         public abstract void Hit(Damage _damage);
+=======
+        public float AttackDist = 1f;
+
+        public bool IsRange = false;
+
+        public abstract void Attack();
+        public abstract void Hit(int _damage);
+        public bool BulletReady() { return (BulletWaitTime < Time.time); }
+>>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
     }
 }
