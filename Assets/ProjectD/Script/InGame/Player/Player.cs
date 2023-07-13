@@ -7,7 +7,6 @@ using Pathfinding;
 
 public class Player : Actor
 {
-<<<<<<< HEAD
     [SerializeField] private LayerMask ClickLayer;
     [SerializeField] private Transform TouchObject;
     
@@ -34,21 +33,6 @@ public class Player : Actor
     }
 
     private void OnDisable()
-=======
-    [SerializeField] private AISensor Scan;
-    
-    public void InitPlayerData()
-    {
-        Fsm.ChangeState(ActorState.Idle);
-    }
-
-    private void Update()
-    {
-        Scan.Scan();
-    }
-
-    public override void Attack()
->>>>>>> 030fbaec27f824ece65b8191e92109d0401970fc
     {
         Astar.onSearchPath -= Update;
     }

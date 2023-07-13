@@ -1,7 +1,8 @@
 /Library
 /obj
 /Assembly-CSharp.csproj
-/ProjectK.sln
-/.vs
-/Temp
 /Logs
+/ProjectD.sln
+/.vsconfig
+/.log
+/Temp
