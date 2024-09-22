@@ -13,23 +13,49 @@ MonoBehaviour:
   m_Name: SkillExcel
   m_EditorClassIdentifier: 
   SkillSheet:
-  - Id: 3001
-    Value1: 10
-    Value2: 0
-    Value3: 0
-  - Id: 3002
-    Value1: 15
-    Value2: 15
-    Value3: 0
-  - Id: 3003
-    Value1: 20
-    Value2: 20
-    Value3: 0
-  - Id: 3004
-    Value1: 5
-    Value2: 5
-    Value3: 15
-  - Id: 3005
-    Value1: 5
-    Value2: 10
-    Value3: 20
+  - Id: 30001
+    Value: 1
+    ActiveTime: 1
+    CoolTime: 100
+    SkillType: 0
+  - Id: 30002
+    Value: 50
+    ActiveTime: 1
+    CoolTime: 20
+    SkillType: 1
+  - Id: 30003
+    Value: 0.5
+    ActiveTime: 10
+    CoolTime: 40
+    SkillType: 2
+  SkillUpgradeSheet:
+  - Id: 30001
+    Value: 1
+    ActiveTime: 1
+    CoolTime: 80
+    Level: 2
+  - Id: 30001
+    Value: 2
+    ActiveTime: 1
+    CoolTime: 60
+    Level: 3
+  - Id: 30002
+    Value: 60
+    ActiveTime: 1
+    CoolTime: 18
+    Level: 2
+  - Id: 30002
+    Value: 80
+    ActiveTime: 1
+    CoolTime: 15
+    Level: 3
+  - Id: 30003
+    Value: 0.6
+    ActiveTime: 12
+    CoolTime: 35
+    Level: 2
+  - Id: 30003
+    Value: 0.7
+    ActiveTime: 15
+    CoolTime: 30
+    Level: 3

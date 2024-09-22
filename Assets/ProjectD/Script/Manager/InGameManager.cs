@@ -8,6 +8,9 @@ public class InGameManager : Singleton<InGameManager>
 
     public MainUI MainUI { get; private set; }
 
+    public Player Player { get; private set; }
+    public Enemy Enemy { get; private set; }
+
     public void OnWake() { }
 
     public void InitInGame()
@@ -28,7 +31,12 @@ public class InGameManager : Singleton<InGameManager>
 
     private void InitCamera()
     {
-        if (PlayerCamera == null) PlayerCamera = Util.GetPrefab<Camera>("Prefabs/InGame/PlayerCamera");
+        PlayerCamera = Util.GetPrefab<Camera>("Prefabs/InGame/PlayerCamera");
 
+        Player = Util.GetPrefab<Player>("Prefabs/InGame/Character/Player");
+        Player.transform.position = new Vector3(4, 0, -6);
+
+        Enemy = Util.GetPrefab<Enemy>("Prefabs/InGame/Character/Enemy");
+        Enemy.transform.position = new Vector3(-5, 0, -4);
     }
 }

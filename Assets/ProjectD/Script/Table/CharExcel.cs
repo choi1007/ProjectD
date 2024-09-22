@@ -7,6 +7,7 @@ using TableData;
 [ExcelAsset]
 public class CharExcel : ScriptableObject
 {
+    public List<CharSheet> CharSheet;
     public List<CharUpgradeSheet> CharUpgradeSheet; 
-    public List<UpgradeMaterialSheet> UpgradeMaterialSheet; 
+    public List<LevelExpSheet> LevelExpSheet; 
 }

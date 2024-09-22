@@ -465,14 +465,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821c879b014742d4f8cf2d133ffa0da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponBulletEffect: {fileID: 9196583034548325039}
-  EffectObject: {fileID: 8699881393562391605}
-  WeaponPosType:
+  _weaponBulletEffect: {fileID: 9196583034548325039}
+  _effectObject: {fileID: 8699881393562391605}
+  _weaponPosType:
   - AnimType: 0
-    Rot: {x: -0.49999997, y: 0.49999997, z: -0.49999997, w: 0.49999997}
+    Rot: {x: 0.49999997, y: -0.49999997, z: 0.49999997, w: -0.49999997}
     Pos: {x: 0.138, y: 0.083, z: -0.002}
   - AnimType: 1
-    Rot: {x: -0.4173274, y: 0.57082206, z: -0.57082206, w: 0.4173274}
+    Rot: {x: 0.41732737, y: -0.5708221, z: 0.5708221, w: -0.41732737}
     Pos: {x: 0.126, y: 0.038, z: -0.002}
 --- !u!1001 &3412794673277946834
 PrefabInstance:

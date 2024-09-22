@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using InGame;
-using GameData;
+using Data;
+using DataEnum;
 using Pathfinding;
 
 public class Player : Actor
 {
     [SerializeField] private LayerMask ClickLayer;
-    [SerializeField] private Transform TouchObject;
     
     [SerializeField] private Transform RifleWeaponPos;
     [SerializeField] private Transform SniperWeaponPos;
@@ -16,6 +16,8 @@ public class Player : Actor
     [SerializeField] private float EndPosNearDistance;
 
     private Camera MainCamera;
+    private Transform TouchEffect;
+
     private PlayerData PlayerData;
 
     private WeaponBase MainWeapon;
@@ -50,10 +52,12 @@ public class Player : Actor
         MainCamera = InGameManager.Instance.PlayerCamera;
 
         //weapon Init
-
         MainWeapon = Util.GetPrefab<WeaponBase>("Prefabs/InGame/Weapon/Rifle01");
         MainWeapon.InitWeapon(0, this);
         MainWeapon.transform.SetParent(RifleWeaponPos, false);
+
+        //TouchEffect
+        TouchEffect = Util.GetPrefab<Transform>("Prefabs/InGame/Effect/TouchEffect");
 
         //fsm init
         FSM.FSMState.Regist(new PlayerIdleState(), Fsm);
@@ -61,7 +65,6 @@ public class Player : Actor
         FSM.FSMState.Regist(new PlayerGetItemState(), Fsm);
         Fsm.ChangeState(ActorState.Idle);
     }
-
 
     private void Update()
     {
@@ -77,16 +80,16 @@ public class Player : Actor
             if (Physics.Raycast(ray, out hit, 100.0f, ClickLayer))
             {
                 ActorMove = true;
-                TouchObject.transform.position = hit.point;
+                TouchEffect.transform.position = hit.point;
                 Astar.destination = hit.point;
-                MainWeapon.WeaponMotionChange(WeaponPos.Type.Move);
+                MainWeapon.WeaponMotionChange(eWeaponPosType.Move);
             }
         }
 
         if (Vector3.Distance(transform.position, Astar.destination) < EndPosNearDistance && ActorMove)
         {
             ActorMove = false;
-            MainWeapon.WeaponMotionChange(WeaponPos.Type.Stop);
+            MainWeapon.WeaponMotionChange(eWeaponPosType.Stop);
         }
 
         if (Astar.hasPath) Fsm.PlayAnimation("Walk", Astar.remainingDistance);

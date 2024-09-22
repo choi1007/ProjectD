@@ -1,22 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using GameData;
+using Data.Weapon;
 using MarchingBytes;
 
 public class WeaponSniper : WeaponBase
 {
     public override void InitWeapon(uint _weaponId, Player _player)
     {
-        WeaponData _weaponData = new WeaponData();
-        _weaponData.Damage = 10;
-        _weaponData.AttackRate = 0.15f;
-        _weaponData.Critical = 50;
-        _weaponData.ReloadTime = 2f;
-        _weaponData.AccuracyRate = 80;
-        _weaponData.MagazineBullet = 30;
-        WeaponData = _weaponData;
-        Bullet = WeaponData.MagazineBullet;
+        this.WeaponDataBase.InitWeaponData(_weaponId);
+        Bullet = WeaponDataBase.BulletCount;
         Player = _player;
     }
 
@@ -25,7 +16,7 @@ public class WeaponSniper : WeaponBase
         if (Bullet == 0) return false;
 
         AttackRateTime += Time.deltaTime;
-        if (AttackRateTime > WeaponData.AttackRate)
+        if (AttackRateTime > WeaponDataBase.AttackRate)
         {
 
             AttackRateTime = 0;
@@ -39,6 +30,6 @@ public class WeaponSniper : WeaponBase
 
     public override void Realod()
     {
-        Bullet = WeaponData.MagazineBullet;
+        Bullet = WeaponDataBase.BulletCount;
     }
 }

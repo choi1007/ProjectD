@@ -7,11 +7,11 @@ public class InitInGame : MonoBehaviour
     private void Awake()
     {
         InGameManager.Instance.OnWake();
+        TableManager.Instance.OnWake();
     }
 
     private void Start()
     {
         InGameManager.Instance.InitInGame();
     }
-
 }

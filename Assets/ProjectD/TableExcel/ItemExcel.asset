@@ -13,15 +13,23 @@ MonoBehaviour:
   m_Name: ItemExcel
   m_EditorClassIdentifier: 
   ItemSheet:
-  - Id: 10001
-    MaxAmount: 999
-    Weight: 0.015
-    ItemType: 2
-  - Id: 10002
-    MaxAmount: 999
-    Weight: 0.1
+  - Id: 50001
     ItemType: 1
-  - Id: 10003
-    MaxAmount: 999
-    Weight: 0.3
+    Weight: 1
+    CombineId: 0
+  - Id: 51001
+    ItemType: 2
+    Weight: 0.1
+    CombineId: 0
+  - Id: 51002
+    ItemType: 2
+    Weight: 0.05
+    CombineId: 0
+  - Id: 51003
+    ItemType: 2
+    Weight: 0.15
+    CombineId: 0
+  - Id: 52001
     ItemType: 0
+    Weight: 2
+    CombineId: 60001

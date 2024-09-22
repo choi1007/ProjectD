@@ -6,21 +6,59 @@ using UnityEngine;
 namespace TableData
 {
     [Serializable]
-    public class CharUpgradeSheet
+    public class CharSheet : CharData
     {
-        public int Level;
-        public int Hp;
-        public int Skill;
+        public uint CharId;
+        public bool Default;
     }
 
     [Serializable]
-    public class UpgradeMaterialSheet
+    public class CharUpgradeSheet : CharData
     {
         public int Level;
-        public int Iron;
-        public int Cloth;
-        public int Junk;
+        public int SkillPoint;
     }
+
+    public class CharData
+    {
+        public int Hp;
+        public float Speed;
+    }
+
+    [Serializable]
+    public class LevelExpSheet
+    {
+        public int Level;
+        public int Exp;
+    }
+
+    [Serializable]
+    public class SkillSheet : Skill
+    {
+        public enum Type
+        {
+            Buff,
+            Active,
+            DeBuff
+        }
+
+        public Type SkillType;
+    }
+
+    [Serializable]
+    public class SkillUpgradeSheet : Skill
+    {
+        public int Level;
+    }
+
+    public class Skill
+    {
+        public uint Id;
+        public float Value;
+        public float ActiveTime;
+        public float CoolTime;
+    }
+
 
     [Serializable]
     public class ItemSheet
@@ -33,17 +71,15 @@ namespace TableData
         }
 
         public uint Id;
-        public int MaxAmount;
-        public float Weight;
         public Type ItemType;
+        public float Weight;
+        public uint CombineId;
     }
 
-    [Serializable]
-    public class SkillSheet
+    public class ItemCombineSheet
     {
         public uint Id;
-        public int Value1;
-        public int Value2;
-        public int Value3;
+        public uint MaterialId;
+        public int Amount;
     }
 }

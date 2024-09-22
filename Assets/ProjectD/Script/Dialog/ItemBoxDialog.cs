@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using InGame;
-using GameData;
+using Data;
 
 public class ItemBoxDialog : DialogBase
 {
@@ -18,9 +18,6 @@ public class ItemBoxDialog : DialogBase
 
     public void SetData(List<ItemData> _itemList)
     {
-        //for(int i = 0; i < _itemList.Count; i++)
-        //{
 
-        //}
     }
 }

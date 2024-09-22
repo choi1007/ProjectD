@@ -2,25 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using InGame;
-using GameData;
+using Data;
+using Data.Weapon;
 
 public class PlayerAttackState : FSM.FSMState
 {
-    public PlayerAttackState(WeaponBase _weapon)
+    private WeaponBase _playerWeapon = null;
+    private float _reloadTime = 0;
+    private float _attackRateTime = 0;
+
+    public WeaponBase PlayerWeapon
     {
-        m_weapon = _weapon;
-        m_weaponData = m_weapon.WeaponData;
+        get => _playerWeapon;
+        set => _playerWeapon = value;
     }
 
-    public WeaponBase m_weapon { get; private set; }
-    private WeaponData m_weaponData;
+    public float ReloadTIme
+    {
+        get => _reloadTime;
+        set => _reloadTime = value;
+    }
 
-    public float ReloadTIme;
-    public float AttackRateTime;
+    public float AttackRateTime
+    {
+        get => _attackRateTime;
+        set => _attackRateTime = value;
+    }
 
     private Vector3 TargetLookVec = new Vector3();
 
     public override ActorState actorState => ActorState.Attack;
+
+    public PlayerAttackState(WeaponBase weapon)
+    {
+        _playerWeapon = weapon;
+    }
+
 
     public override void OnStart()
     {
@@ -53,7 +70,7 @@ public class PlayerAttackState : FSM.FSMState
 
     private void Attack()
     {
-        if (m_weapon.Fire() == false)
+        if (_playerWeapon.Fire() == false)
             Reload();
     }
 
@@ -67,10 +84,10 @@ public class PlayerAttackState : FSM.FSMState
         //}
 
         ReloadTIme += Time.deltaTime;
-        if (ReloadTIme > m_weaponData.ReloadTime)
+        if (ReloadTIme > _playerWeapon.WeaponDataBase.ReloadTime)
         {
             ReloadTIme = 0;
-            m_weapon.Realod();
+            _playerWeapon.Realod();
         }
     }
 

@@ -12,54 +12,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1db84606cdcc1141881e1217200e56c, type: 3}
   m_Name: CharExcel
   m_EditorClassIdentifier: 
-  CharUpgradeSheet:
-  - Level: 1
-    Hp: 0
-    Skill: 0
-  - Level: 2
+  CharSheet:
+  - CharId: 10001
     Hp: 10
-    Skill: 0
-  - Level: 3
-    Hp: 25
-    Skill: 0
-  - Level: 4
-    Hp: 50
-    Skill: 1
-  - Level: 5
-    Hp: 80
-    Skill: 1
-  - Level: 6
-    Hp: 120
-    Skill: 1
-  - Level: 7
-    Hp: 200
-    Skill: 2
-  UpgradeMaterialSheet:
-  - Level: 1
-    Iron: 1
-    Cloth: 1
-    Junk: 1
+    Speed: 2
+    Default: 1
+  - CharId: 10002
+    Hp: 11
+    Speed: 2.1
+    Default: 0
+  - CharId: 10003
+    Hp: 12
+    Speed: 2.2
+    Default: 0
+  - CharId: 10004
+    Hp: 13
+    Speed: 2.3
+    Default: 0
+  - CharId: 10005
+    Hp: 14
+    Speed: 2.4
+    Default: 0
+  - CharId: 10006
+    Hp: 15
+    Speed: 2.5
+    Default: 0
+  - CharId: 10007
+    Hp: 16
+    Speed: 2.6
+    Default: 0
+  CharUpgradeSheet:
   - Level: 2
-    Iron: 2
-    Cloth: 2
-    Junk: 2
+    Hp: 1
+    Speed: 0
+    SkillPoint: 1
   - Level: 3
-    Iron: 3
-    Cloth: 3
-    Junk: 3
+    Hp: 1
+    Speed: 0
+    SkillPoint: 1
   - Level: 4
-    Iron: 4
-    Cloth: 4
-    Junk: 4
+    Hp: 1
+    Speed: 0.1
+    SkillPoint: 1
   - Level: 5
-    Iron: 5
-    Cloth: 5
-    Junk: 5
+    Hp: 1
+    Speed: 0
+    SkillPoint: 1
   - Level: 6
-    Iron: 6
-    Cloth: 6
-    Junk: 6
+    Hp: 1
+    Speed: 0
+    SkillPoint: 1
   - Level: 7
-    Iron: 7
-    Cloth: 7
-    Junk: 7
+    Hp: 1
+    Speed: 0.2
+    SkillPoint: 2
+  LevelExpSheet:
+  - Level: 2
+    Exp: 50
+  - Level: 3
+    Exp: 80
+  - Level: 4
+    Exp: 130
+  - Level: 5
+    Exp: 150
+  - Level: 6
+    Exp: 170
+  - Level: 7
+    Exp: 250

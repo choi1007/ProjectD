@@ -8,4 +8,5 @@ using TableData;
 public class ItemExcel : ScriptableObject
 {
     public List<ItemSheet> ItemSheet;
+    public List<ItemCombineSheet> ItemCombineSheet;
 }

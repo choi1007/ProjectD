@@ -2,52 +2,66 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GameData;
-
-[Serializable]
-public class WeaponPos
-{
-    public enum Type
-    {
-        Stop,
-        Move,
-    }
-
-    public Type AnimType;
-    public Quaternion Rot;
-    public Vector3 Pos;
-}
+using Data.Weapon;
+using DataEnum;
+using System.Linq;
 
 public abstract class WeaponBase : MonoBehaviour
 {
-    public Transform WeaponBulletEffect;
-    public GameObject EffectObject;
-    public List<WeaponPos> WeaponPosType;
+    [SerializeField]
+    private Transform _weaponBulletEffect = null;
 
-    public WeaponData WeaponData { get; protected set; }
-    public int Bullet { get; protected set; }
+    [SerializeField]
+    private GameObject _effectObject = null;
 
-    protected float AttackRateTime;
+    [SerializeField]
+    private List<WeaponPos> _weaponPosType = new List<WeaponPos>();
 
-    protected Player Player;
+    private WeaponDataBase _weaponDataBase = new WeaponDataBase();
+    private int _bullet = 0;
 
-    private void Awake()
+    protected float AttackRateTime = 0;
+    protected Player Player = null;
+
+    protected Transform WeaponBulletEffect
     {
-        WeaponData = new WeaponData();
+        get => _weaponBulletEffect;
+    }
+
+    protected GameObject EffectObject
+    {
+        get => _effectObject;
+    }
+
+    protected List<WeaponPos> WeaponPosType
+    {
+        get => _weaponPosType;
+    }
+
+    public WeaponDataBase WeaponDataBase
+    {
+        get => _weaponDataBase;
+        protected set => _weaponDataBase = value;
+    }
+
+    public int Bullet
+    {
+        get => _bullet;
+        protected set => _bullet = value;
     }
 
     public abstract void InitWeapon(uint _weaponId, Player _player);
     public abstract bool Fire();
     public abstract void Realod();
 
-    public void WeaponMotionChange(WeaponPos.Type _type)
+    public void WeaponMotionChange(eWeaponPosType _type)
     {
-        var _wpos = WeaponPosType.Find(x => x.AnimType == _type);
+        var _wpos = _weaponPosType.Where(x => x.AnimType == _type).FirstOrDefault();
         var _parent = transform.parent;
 
         switch (_type)
         {
-            case WeaponPos.Type.Stop:
+            case eWeaponPosType.Stop:
                 {
                     StopAllCoroutines();
                     StartCoroutine(WeaponMotionChange(_parent, _wpos));

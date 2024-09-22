@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GameData;
+using Data;
 
 public class MapItemManager : Singleton<MapItemManager>
 {

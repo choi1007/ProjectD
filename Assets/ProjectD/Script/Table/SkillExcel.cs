@@ -8,4 +8,5 @@ using TableData;
 public class SkillExcel : ScriptableObject
 {
     public List<SkillSheet> SkillSheet;
+    public List<SkillUpgradeSheet> SkillUpgradeSheet;
 }
